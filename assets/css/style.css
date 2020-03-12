@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html,
 body{
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: aliceblue;
@@ -30,9 +32,26 @@ a:hover{
     border: 1px solid transparent;
     border-radius: 0.25 rem;
 }
+.btn-big{
+    padding: 0.7rem 1.3rem;
+    line-height: 1.5rem;
+    font-size: 1.1em;
+}
 .btn:hover{
     color: white !important;
     background-color: #014244;
+}
+.text-input{
+    padding: 0.7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    color: #444;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
 }
 header *{
     color: white;;
@@ -74,6 +93,10 @@ header ul li a{
     font-size: 1.1em;
     display: block;
     text-decoration: none;
+}
+
+.page-wrapper{
+    min-height: 100%;
 }
 
 /* SLIDER */
@@ -173,6 +196,85 @@ header ul li a{
     width: 30%;
     height: 300px;
     border: 1px solid yellowgreen;
+}
+
+/* FOOTER */
+.footer{
+    position: relative;
+    color: grey;
+    background-color: #303036;
+    height: 400px;
+}
+.footer .footer-main{
+    height: 350px;
+    display: flex;
+}
+.footer .footer-main .footer-section{
+    flex: 1;
+    padding: 25px;
+}
+.footer .footer-main .footer-section h1,
+.footer .footer-main .footer-section h2{
+    color: white;
+}
+.footer .footer-main h1 span{
+    color: cyan;
+}
+.footer .footer-main .about .contact span{
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.footer .footer-main .about .social a{
+    display: inline-block;
+    font-size: 1.3rem;
+    border: 1px solid grey;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.footer .footer-main .about .social a:hover{
+    color: white;
+    border: 1px solid white;
+    transition: all 0.2s;
+}
+.footer .footer-main .quick-links a{
+    display: block;
+    margin-left: 10px;
+    font-size: 1.2em;
+    transition: all 0.3s;
+}
+.footer .footer-main .quick-links a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all 0.3s;
+}
+.footer .footer-main .contact .contact-input{
+    background-color: #272727;
+    padding: 0.9em 1.4em;
+    border: none;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+}
+.footer .footer-main .contact .contact-input:focus{
+    background-color: #1a1a1a;
+}
+.footer .footer-main .contact .contact-btn{
+    float: right;
+}
+.footer .footer-bottom{
+    position: absolute;
+    bottom: 0;
+    background-color: #3a3a3f;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
 }
 
 /* MEDIA QUERIES */

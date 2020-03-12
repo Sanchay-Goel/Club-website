@@ -7,6 +7,33 @@ body{
     background-color: aliceblue;
     font-family: 'Lora', serif;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 5px;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: #006669;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #006669;
+    border: 1px solid transparent;
+    border-radius: 0.25 rem;
+}
+.btn:hover{
+    color: white !important;
+    background-color: #014244;
+}
 header *{
     color: white;;
 }
@@ -47,14 +74,6 @@ header ul li a{
     font-size: 1.1em;
     display: block;
     text-decoration: none;
-}
-h1,h2,h3,h4,h5,h6{
-    margin: 5px;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-    color: inherit;
 }
 
 /* SLIDER */
@@ -110,7 +129,50 @@ a{
     color: inherit;
 }
 .post-slider .post-wrapper .post .slider-info :hover{
-    color: navy;
+    color: #006669;
+}
+
+/* Main Content */
+.content{
+    width: 90%;
+    margin: 30px auto;
+}
+.content .main-content{
+    width: 70%;
+    float: left;
+    border: 1px solid blue;
+}
+.content .main-content .recent-post-title{
+    margin: 20px;
+}
+.content .main-content .post{
+    position: relative;
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: white;
+}
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.content .main-content .post .post-preview{
+    width: 60%;
+    float: right;
+    padding: 10px;
+}
+.content .main-content .post .read-more{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.side-content{
+    float: left;
+    width: 30%;
+    height: 300px;
+    border: 1px solid yellowgreen;
 }
 
 /* MEDIA QUERIES */

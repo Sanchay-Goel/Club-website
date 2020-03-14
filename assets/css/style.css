@@ -94,6 +94,9 @@ header ul li a{
     display: block;
     text-decoration: none;
 }
+header ul li a:hover{
+    color: whitesmoke;
+}
 
 .page-wrapper{
     min-height: 100%;
@@ -214,6 +217,38 @@ header ul li a{
     border: 1px solid yellowgreen;
 }
 
+/* Projects */
+.project-main{
+    width: 80%;
+    margin: 10px auto;
+}
+.project-title{
+    font-size: 2.5em;
+    text-align: center;
+}
+.project-section{
+    margin-bottom: 40px;
+}
+.project-row{
+    margin: 40px 20px 20px;
+}
+.project-col{
+    float: left;
+    width: 33%;
+    padding: 0 16px;
+}
+.project-card{
+    box-shadow: 0 4px 8px 2px black;
+    padding: 16px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(207, 250, 243);
+}
+
+.card-image{
+    width: 100%;;
+}
+
 /* FOOTER */
 .footer{
     position: relative;
@@ -316,5 +351,11 @@ header ul li a{
         right: 20px;
         top: 15px;
         font-size: 2em;
+    }
+
+    .project-col{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
 }

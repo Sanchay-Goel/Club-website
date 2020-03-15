@@ -246,6 +246,51 @@ header ul li a:hover{
     width: 100%;;
 }
 
+/* Members */
+.members-main{
+    width: 80%;
+    margin: 10px auto;
+}
+.members-title{
+    font-size: 2.5em;
+    margin-top: 25px;
+    text-align: center;
+}
+.members-batch{
+    font-size: 2.0em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.members-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.member-details{
+    width: 18%;
+    margin: 15px auto;
+}
+.member-details .member-image{
+    width: 100%;
+}
+.member-details .member-name{
+    text-align: center;
+    font-size: 1.5em;
+}
+.member-details .member-social{
+    width: 80%;
+    margin: 0 auto;
+}
+.member-details .member-social-icon{
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.3em;
+    border: 1px solid black;
+}
+
 /* FOOTER */
 .footer{
     position: relative;
@@ -330,6 +375,9 @@ header ul li a:hover{
     .content{
         width: 100%;
     }
+    .member-details{
+        width: 22%;
+    }
 }
 @media only screen and (max-width:720px){
     .content .main-content{
@@ -348,6 +396,10 @@ header ul li a:hover{
     }
     .content .main-content.single{
         padding: 20px 20px;
+    }
+    .member-details{
+
+        width: 28%;
     }
     .footer{
         height: auto;
@@ -412,5 +464,8 @@ header ul li a:hover{
         position: static;
         display: block;
         width: 100%;
+    }
+    .member-details{
+        width: 45%;
     }
 }

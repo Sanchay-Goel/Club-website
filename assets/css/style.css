@@ -158,6 +158,25 @@ header ul li a:hover{
     color: #006669;
 }
 
+/* About section */
+.about-section{
+    height: 270px;
+    width: 90%;
+    margin: 20px auto;
+}
+.about-content{
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 20px;
+    float: left;
+}
+.about-image{
+    width: 30%;
+    height: 100%;
+    float: right;
+    padding: 20px 10px;
+}
+
 /* Main Content */
 .content{
     width: 90%;
@@ -384,7 +403,7 @@ header ul li a:hover{
         width: 100%;
     }
     .content .main-content .post{
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
     .content .side-content{
@@ -467,5 +486,12 @@ header ul li a:hover{
     }
     .member-details{
         width: 45%;
+    }
+    .about-content{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .about-image{
+        display: none;
     }
 }
